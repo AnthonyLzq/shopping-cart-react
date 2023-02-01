@@ -19,8 +19,6 @@ const useStyles = makeStyles()(() => ({
 }))
 
 const App = () => {
-  console.log('NODE_ENV', import.meta.env.MODE)
-
   const [cartIsOpen, setCartIsOpen] = useState(false)
   const [cartItems, setCartItems] = useState<CartItemType[]>([])
   const { data, isLoading, error } = useQuery<CartItemType[]>(
